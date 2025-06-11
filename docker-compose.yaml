@@ -26,21 +26,21 @@ services:
       - db-data:/var/lib/mysql 
 
 
-dbms:
-  image: "phpmyadmin"
-  restart: always
-  ports:
-    - "8001:80"
-  environment:
-    - PMA_HOST=db
+  dbms:
+    image: "phpmyadmin"
+    restart: always
+    ports:
+      - "8001:80"
+    environment:
+      - PMA_HOST=db
 
-web:
-  build: ./nginx
-  restart: always
-  ports:
-  - "80:80"
-  depends_on:
-    - backend
+  web:
+    build: ./nginx
+    restart: always
+    ports:
+    - "80:80"
+    depends_on:
+      - backend
 
 volumes:
   app-data:
