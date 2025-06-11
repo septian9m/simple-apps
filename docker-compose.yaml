@@ -13,7 +13,7 @@ services:
     images: "maria db"
     restart: always
     links:
-      - phpmyadmin
+      - dbms
     ports:
       - "3306"
     environment:
