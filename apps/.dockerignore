@@ -1,0 +1,10 @@
+database/
+testing/
+sonar-project.propeties
+README.md
+Dockerfile
+coverage/
+node_modules/
+.dockerignore
+
+
