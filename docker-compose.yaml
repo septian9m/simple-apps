@@ -31,7 +31,7 @@ dbms:
   restart: always
   ports:
     - "8001:80"
-  enviroment:
+  environment:
     - PMA_HOST=db
 
 web:
