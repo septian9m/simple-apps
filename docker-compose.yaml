@@ -10,7 +10,7 @@ services:
     volumes:
       - app-data:/apps/public/images
   db:
-    images: "maria db"
+    image: "mariadb"
     restart: always
     links:
       - dbms
@@ -27,7 +27,7 @@ services:
 
 
 dbms:
-  images: "phpmyadmin"
+  image: "phpmyadmin"
   restart: always
   ports:
     - "8001:80"
