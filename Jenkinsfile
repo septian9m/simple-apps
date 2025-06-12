@@ -49,10 +49,5 @@ pipeline {
             }
         }
         
-        stage('Backup') {
-            steps {
-                 build 'Backup Image' 
-            }
-        }
     }
 }
